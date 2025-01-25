@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - John Doe</title>
+    <title>Candy Sweetooth - Professional Companion</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
         body {
-            background-color: #f0f2f5;
+            background: #ffe6f2;
             line-height: 1.6;
         }
 
@@ -24,59 +24,80 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
             color: white;
             padding: 60px 40px;
-            border-radius: 15px;
+            border-radius: 30px;
             margin-bottom: 40px;
             display: flex;
             align-items: center;
             gap: 40px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(255,105,180,0.3);
+            border: 5px dashed white;
         }
 
         .profile-image {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid white;
             transition: transform 0.3s ease;
+            filter: sepia(1) hue-rotate(-20deg);
         }
 
         .profile-image:hover {
-            transform: scale(1.05);
+            transform: rotate(10deg) scale(1.1);
         }
 
         .name-section h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin-bottom: 10px;
-            letter-spacing: 2px;
+            text-shadow: 2px 2px 0 #ff69b4;
+            color: #fff;
+            -webkit-text-stroke: 2px #ff1493;
         }
 
         .name-section p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: bold;
         }
 
         .bio-section {
             background: white;
             padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+            border: 3px dotted #ff69b4;
         }
 
         .bio-section h2 {
-            color: #2c3e50;
+            color: #ff1493;
             margin-bottom: 20px;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            text-decoration: underline wavy;
         }
 
         .bio-section p {
             color: #666;
-            font-size: 1.1rem;
-            max-width: 800px;
+            font-size: 1.2rem;
             line-height: 1.8;
+        }
+
+        .specialties {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .specialty-card {
+            background: #fff0f6;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #ff69b4;
         }
 
         @media (max-width: 768px) {
@@ -87,12 +108,16 @@
             }
 
             .profile-image {
-                width: 150px;
-                height: 150px;
+                width: 200px;
+                height: 200px;
             }
 
             .name-section h1 {
                 font-size: 2.5rem;
+            }
+
+            .specialties {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -100,25 +125,52 @@
 <body>
     <div class="container">
         <header class="header">
-            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6" 
-                 alt="Profile Photo" 
+            <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03" 
+                 alt="Candy Sweetooth" 
                  class="profile-image">
             <div class="name-section">
-                <h1>John Doe</h1>
-                <p>Senior Software Developer</p>
+                <h1>Candy Sweetooth</h1>
+                <p>✨ Senior Companion | Professional Cuddler | Nighttime Philosopher ✨</p>
             </div>
         </header>
 
         <section class="bio-section">
-            <h2>About Me</h2>
+            <h2>💋 About Your Sweet Treat</h2>
             <p>
-                Passionate software developer with 8+ years of experience in building scalable web applications. 
-                Specialized in JavaScript ecosystem with expertise in React, Node.js, and cloud technologies. 
-                Strong advocate for clean code and user-centric design. When not coding, I enjoy contributing 
-                to open-source projects, mentoring junior developers, and exploring new technologies. 
-                Currently focused on mastering machine learning fundamentals while leading development 
-                of enterprise-level SaaS solutions.
+                Professional snuggler with 5+ years experience in advanced cuddling techniques and 
+                philosophical pillow talk. Certified in:<br>
+                🍒 Netflix navigation<br>
+                🍭 Midnight snack preparation<br>
+                🧁 Emotional support with benefits<br><br>
+                
+                "Why pay for therapy when you can get hugs AND life advice?" - My Yelp Reviews<br><br>
+                
+                Special skills include finding lost remote controls, pretending to care about sports,
+                and laughing at bad jokes. Available for brunch dates, awkward family events,
+                and teaching your cat to like someone.
             </p>
+
+            <div class="specialties">
+                <div class="specialty-card">
+                    <h3>💄 Basic Package</h3>
+                    <p>"The Decoy Date"<br>
+                    Includes 3 fake laughs/hour<br>
+                    100% phone ignoring guarantee</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>🎀 Premium Tier</h3>
+                    <p>"Full Experience"<br>
+                    Will actually watch the movie<br>
+                    Remembers your mom's birthday</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>🦄 Platinum</h3>
+                    <p>"The Illusion"<br>
+                    Pretends to like your friends<br>
+                    Laughs at your dad jokes<br>
+                    + Free personality</p>
+                </div>
+            </div>
         </section>
     </div>
 </body>
