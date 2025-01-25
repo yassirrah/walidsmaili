@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John Doe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .name-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .name-section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .bio-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .bio-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .bio-section p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 800px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .name-section h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6" 
+                 alt="Profile Photo" 
+                 class="profile-image">
+            <div class="name-section">
+                <h1>John Doe</h1>
+                <p>Senior Software Developer</p>
+            </div>
+        </header>
+
+        <section class="bio-section">
+            <h2>About Me</h2>
+            <p>
+                Passionate software developer with 8+ years of experience in building scalable web applications. 
+                Specialized in JavaScript ecosystem with expertise in React, Node.js, and cloud technologies. 
+                Strong advocate for clean code and user-centric design. When not coding, I enjoy contributing 
+                to open-source projects, mentoring junior developers, and exploring new technologies. 
+                Currently focused on mastering machine learning fundamentals while leading development 
+                of enterprise-level SaaS solutions.
+            </p>
+        </section>
+    </div>
+</body>
+</html>
