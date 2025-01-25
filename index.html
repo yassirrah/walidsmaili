@@ -99,6 +99,58 @@
             text-align: center;
             border: 2px solid #ff69b4;
         }
+        /* Add these new styles */
+        .social-section {
+            margin-top: 40px;
+            background: #fff0f6;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+            border: 3px dotted #ff69b4;
+        }
+
+        .social-section h2 {
+            color: #ff1493;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-decoration: underline wavy;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .social-card {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid #ff69b4;
+        }
+
+        .social-card:hover {
+            transform: rotate(-3deg) scale(1.05);
+        }
+
+        .social-card i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ff69b4;
+        }
+
+        .social-card h3 {
+            color: #ff1493;
+            margin-bottom: 10px;
+        }
+
+        .social-card p {
+            color: #666;
+            font-size: 1.1rem;
+        }
 
         @media (max-width: 768px) {
             .header {
@@ -121,6 +173,7 @@
             }
         }
     </style>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -129,7 +182,7 @@
                  alt="Candy Sweetooth" 
                  class="profile-image">
             <div class="name-section">
-                <h1>Candy Sweetooth</h1>
+                <h1>Walid zamel bouterma</h1>
                 <p>✨ Senior Companion | Professional Cuddler | Nighttime Philosopher ✨</p>
             </div>
         </header>
@@ -169,6 +222,33 @@
                     Pretends to like your friends<br>
                     Laughs at your dad jokes<br>
                     + Free personality</p>
+                </div>
+            </div>
+        </section>
+        <section class="social-section">
+            <h2>💌 Connect With Me 💌</h2>
+            <div class="social-grid">
+                <div class="social-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>@CandyGramForMe</h3>
+                    <p>📸 Daily posts featuring:
+                        <br>- Artistic latte foam
+                        <br>- #NoFilter sunset pics
+                        <br>- Mysterious thigh gaps
+                        <br>⚠️ May contain food pics that aren't mine
+                    </p>
+                </div>
+                
+                <div class="social-card">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Candy's Cuddle Hub</h3>
+                    <p>👍 Like for life advice!
+                        <br>👀 Exclusive content:
+                        <br>- Relationship "hacks"
+                        <br>- Horoscope readings
+                        <br>- Vague inspirational quotes
+                        <br>🎁 Free virtual hug with follow!
+                    </p>
                 </div>
             </div>
         </section>
